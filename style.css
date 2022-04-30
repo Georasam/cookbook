@@ -10,7 +10,9 @@ body{
     font-family: 'worksans';
     background-color: #f6b35b
 }
-
+hr {
+    background-color: red;
+}
 
 
 @media (min-width: 540px){
@@ -25,11 +27,12 @@ body{
     flex-direction: column-reverse;
 }
 
-.navbar{
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+#navbar{
+    float: right;
+    margin-right: 20px;
+    margin-top: 25px;
     overflow: hidden;
+    list-style-type: none;
 }
 .menu {
     color: white;
@@ -38,8 +41,9 @@ h1 {
     font-style: italic;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
-#starters {
+h2 {
     margin-top: 100px;
     margin-bottom: 20px;
     margin-left: 10px;
@@ -63,12 +67,23 @@ h1 {
 }
 li {
     margin-left:30px;
+    list-style-type: circle;
 }
 button {
     margin-left: 50%;
     margin-right: 50%;
-    width: 50px;
+    width: 60px;
+    height: 20px;
     margin-top: 10px;
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 10%;
+    
 }
 #second-starter {
     display: flex;
@@ -96,11 +111,49 @@ button {
 
 @media (min-width: 1140px){
     #main {
-        margin-left: 50px;
-        margin-right: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    
+        
+    }
+    
+    .cookbook {
+        display: flex;
+        justify-content:center;
+        height: 500px;
+    }
+    #navbar {
+        display: flex;
+        justify-content:center;
+        justify-content: space-around;
+        margin-top: 300px;
+        float:unset;
+        list-style-type: none;
+        
+        margin-left: 600px;
+        margin-right: 620px;
+    }
+    .menu {
+        color: black;
+    
+    }
+    * {
+        font-size: 22px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    button {
+        width: 90px;
+        height: 30px;
     }
     #starters {
-        border: none;
-        text-align: start;
+        font-size: 1.5rem;
+    }
+    #mains {
+        font-size: 1.5rem;
+    }
+    #desserts {
+        font-size: 1.5rem;
     }
 }
