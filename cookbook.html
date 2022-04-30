@@ -10,22 +10,22 @@
 <body>
     <!--background-->
    <header class="cookbook">
-       <nav>
-        <ul class="navbar">
-            <li><a href="#starters">Starters</a></li>
-            <li><a href="">Main</a></li>
-            <li><a href="">Dessert</a></li>
-        </ul>
-       </nav>
-       <h1>ITALIAN CLASSIC</h1>
-       </header>
-       <main>
-           <h2 id="starters" name="starters">Start</h2>
+        <nav>
+            <ul class="navbar">
+                <li><a class="menu" href="#starters">Starters</a></li>
+                <li><a class="menu" href="">Main</a></li>
+                <li><a class="menu" href="">Dessert</a></li>
+            </ul>
+        </nav>
+        <h1>ITALIAN CLASSICS</h1>
+    </header>
+    <main id="main">
+           <h2 id="starters" name="starters">Starters</h2>
            <div id="first-starter">
                <div>
-                   <img src="./firsts.jpg" alt="">
+                   <img class="img" src="./firsts.jpg" alt="">
                </div>
-               <div>
+               <div class="incredients">
                    <h3>Baked figs with blue cheese and balsamic</h3>
                    <ul>
                        <li>6 figs</li>
@@ -37,29 +37,31 @@
                        <li>Crusty bread</li>
                    </ul>
                    <button type="button">Go to...</button>
-               </div>
-
-           </div>
-           <div id="second-starter">
-            <div>
-                <img src="./seconds.jpeg" alt="">
+                </div>
             </div>
-            <div>
-                <h3>Focaccia</h3>
-                <ul>
-                    <li>500g strong white bread flour</li>
-                    <li>10g (1 +1⁄2 tsp) fine sea salt</li>
-                    <li>6g fresh yeast or 3g (1 tsp) active dried yeast</li>
-                    <li>400g water at room temperature</li>
-                    <li>80g olive oil, plus extra to brush</li>
-                </ul>
-                <button type="button">Go to...</button>
-            </div>
+            <hr class="hr">
             <div id="second-starter">
                 <div>
-                    <img src="./third.webp" alt="">
+                    <img class="img" src="./seconds.jpeg" alt="">
                 </div>
+                <div class="incredients">
+                    <h3>Focaccia</h3>
+                    <ul>
+                        <li>500g strong white bread flour</li>
+                        <li>10g (1 +1⁄2 tsp) fine sea salt</li>
+                        <li>6g fresh yeast or 3g (1 tsp) active dried yeast</li>
+                        <li>400g water at room temperature</li>
+                        <li>80g olive oil, plus extra to brush</li>
+                    </ul>
+                    <button type="button">Go to...</button>
+                </div>
+            </div>
+            <hr class="hr">
+            <div id="third-starter">
                 <div>
+                    <img class="img" src="./third.webp" alt="">
+                </div>
+                <div class="incredients">
                     <h3>Tomato bruchetta</h3>
                     <ul>
                         <li>½ small red onion, finely chopped</li>
@@ -73,7 +75,7 @@
                     </ul>
                     <button type="button">Go to...</button>
                 </div>                                     
-       </main>
+    </main>
 
 </body>
 </html>
