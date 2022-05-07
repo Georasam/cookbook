@@ -52,16 +52,11 @@ h2 {
     text-align: center;
 }
 .img {
-    width: auto;
+    width: 120px;
     height: 150px;
+    border-radius: 2.5%;
 }
-#first-starter {
-    display: flex;
-    justify-content:space-between;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
+
 .incredients {
     margin-right: 10px;
 }
@@ -83,7 +78,14 @@ button {
     display: inline-block;
     font-size: 1rem;
     border-radius: 10%;
-    
+}
+#first-starter {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
 }
 #second-starter {
     display: flex;
@@ -101,7 +103,6 @@ button {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 20px;
-
 }
 .hr {
     color: black;
