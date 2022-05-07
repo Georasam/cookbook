@@ -8,6 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="desserts.css">
     <title>cookbook</title>
 </head>
 <body>
@@ -15,25 +16,29 @@
    <header class="cookbook">
     <nav>
         <ul id="navbar">
-            <li><a href="starters.html" href="">STARTERS</a></li>
-            <li><a href="mains.html" href="">MAINS</a></li>
-            <li class="current"><a href="desserts.html" href="">DESSERTS</a></li>
+            <li class="menu"><a href="starters.html" href="">Starters</a></li>
+            <li class="menu"><a href="mains.html" href="">Mains</a></li>
+            <li class="menu"><a href="desserts.html" href="">Desserts</a></li>
         </ul>
     </nav>
     <h1>ITALIAN CLASSICS</h1>
 </header>
-     <div class="col-sm-6 card">
-         <img class="card-img-top" src="./deset.jpg" alt="">
+     <div class="col-12 col-lg-4 card">
          <div class="card-body">
-             <h4 class="card-tittle">Strawberry Gelato</h4>
+             <h4 class="card-title">Strawberry Gelato</h4>
              <p class="card-text">
                  <h4>Ingredients</h4>
-                <ul>
-                    <li>2 tablespoons cornstarch</li>
-                    <li>3 cups half-and-half (divided)</li>
-                    <li>1 ⅓ cups granulated sugar </li>
-                    <li>2 pounds fresh strawberries (about 8 cups hulled and quartered)</li>
-                </ul>
+                <div class="row" id="image">
+                    <ul class="col-6">
+                        <li>2 tablespoons cornstarch</li>
+                        <li>3 cups half-and-half (divided)</li>
+                        <li>1 ⅓ cups granulated sugar </li>
+                        <li>2 pounds fresh strawberries (about 8 cups hulled and quartered)</li>
+                    </ul>
+                    <div class="img" class="col-6">
+                        <img class="card-img-top" src="./deset.jpg" alt="">
+                    </div>
+                </div>
              </p>
              <h4>Method of cooking</h4>    
              <p>1. Mix the blueberries and sugar in a bowl. Squeeze the lemon juice on top and mix well until the juice and sugar have formed a thick paste. </p>
