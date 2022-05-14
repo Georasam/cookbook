@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -16,10 +17,10 @@
    <header class="cookbook">
         <nav>
             <ul id="navbar">
-                <li class="current"><a href="cookbook.html" class="menu">HOME</a></li>
-                <li><a href="starters.html" href="menu">STARTERS</a></li>
-                <li><a href="mains.html" href="menu">MAINS</a></li>
-                <li><a href="desserts.html" href="menu">DESSERTS</a></li>
+                <li class="navstyle"><a href="cookbook.html" class="menu">HOME</a></li>
+                <li class="navstyle"><a href="starters.html" class="grey">STARTERS</a></li>
+                <li class="navstyle"><a href="mains.html" class="grey">MAINS</a></li>
+                <li class="navstyle"><a href="desserts.html" class="grey">DESSERTS</a></li>
             </ul>
         </nav>
         <h1>ITALIAN CLASSICS</h1>
@@ -41,7 +42,10 @@
                        <li>Fresh basil</li>
                        <li>Crusty bread</li>
                    </ul>
-                   <button type="button">View Recipe</button>
+                   <div class="homebutton">
+                    <button type="button"><a href="starters.html #firststarter" class="buttoncolor">View Recipe</a></button>
+                    <button type="button" class="btn"><a href="cookbook.html" class="buttoncolor"><i class="fa fa-home"></i></a></button>
+                   </div>
                 </div>
             </div>
             <hr class="hr">
@@ -58,7 +62,10 @@
                         <li>400g water at room temperature</li>
                         <li>80g olive oil, plus extra to brush</li>
                     </ul>
-                    <button type="button">View Recipe</button>
+                    <div class="homebutton">
+                        <button type="button"><a href="starters.html #secondstarter" class="buttoncolor">View Recipe</a></button>
+                        <button type="button" class="btn"><a href="cookbook.html" class="buttoncolor"><i class="fa fa-home"></i></a></button>
+                       </div>
                 </div>
             </div>
             <hr class="hr">
@@ -78,7 +85,10 @@
                         <li>1 loaf crusty bread</li>
             
                     </ul>
-                    <button type="button">View Recipe</button>
+                    <div class="homebutton">
+                        <button type="button"><a href="starters.html #thirdstarter" class="buttoncolor">View Recipe</a></button>
+                        <button type="button" class="btn"><a href="cookbook.html" class="buttoncolor"><i class="fa fa-home"></i></a></button>
+                       </div>
                 </div>                                     
     </main>
     <main id="main">
@@ -96,7 +106,10 @@
                     <li>½ tsp dried oregano</li>
                     <li>Handful fresh basil, torn, plus extra leaves to serve</li>
                 </ul>
-                <button type="button">View Recipe</button>
+                <div class="homebutton">
+                    <button type="button"><a href="mains.html #firstmain" class="buttoncolor">View Recipe</a></button>
+                    <button type="button" class="btn"><a href="cookbook.html" class="buttoncolor"><i class="fa fa-home"></i></a></button>
+                   </div>
              </div>
          </div>
          <hr class="hr">
@@ -115,7 +128,10 @@
                      <li>2 tbsp extra-virgin olive oil</li>
                      <li>Large (1.4kg) line-caught bream</li>                     
                  </ul>
-                 <button type="button">View Recipe</button>
+                 <div class="homebutton">
+                    <button type="button"><a href="mains.html #secondmain" class="buttoncolor">View Recipe</a></button>
+                    <button type="button" class="btn"><a href="cookbook.html" class="buttoncolor"><i class="fa fa-home"></i></a></button>
+                   </div>
              </div>
          </div>
          <hr class="hr">
@@ -136,7 +152,10 @@
                      <li>30g mature Cheddar, finely grated</li>
                      <li>Freshly cooked spaghetti to serve</li>                    
                  </ul>
-                 <button type="button">View Recipe</button>
+                 <div class="homebutton">
+                    <button type="button"><a href="mains.html #thirdmain" class="buttoncolor">View Recipe</a></button>
+                    <button type="button" class="btn"><a href="cookbook.html" class="buttoncolor"><i class="fa fa-home"></i></a></button>
+                   </div>
              </div>
      </main>
     <main id="main">
@@ -153,14 +172,17 @@
                     <li>1 ⅓ cups granulated sugar </li>
                     <li>2 pounds fresh strawberries (about 8 cups hulled and quartered)</li>
                 </ul>
-                <button type="button">View Recipe</button>
+                <div class="homebutton">
+                    <button type="button"><a href="desserts.html #firstdessert" class="buttoncolor">View Recipe</a></button>
+                    <button type="button" class="btn"><a href="cookbook.html" class="buttoncolor"><i class="fa fa-home"></i></a></button>
+                   </div>
              </div>
          </div>                         
     </main>
     <footer>
-        <h2 id="contactus">Contact us or place your Order</h2>
+        <h2 id="contactus">Contact us or comment a recipe</h2>
         <div id="container" class="container">
-            <form action="action_page.php">
+            <form action="contact.html">
                <div id="contactdetails">
                     <label for="fname">First Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -168,10 +190,10 @@
                     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
                </div> 
                <div id="checkboxcontainer">
-                    <label id="choice" for="country">Select your choice</label><br>
-                    <form action="/action_page.php">
+                    <label id="choice" for="country">Select the recipe you want to comment to</label><br>
+                    <form action="contact.html">
                         <input type="checkbox" id="no_order" name="no_order" value="no_order">
-                        <label for="no_order"> no order</label><br>
+                        <label for="no_order"> no recipe, just contact</label><br>
                     <div class="row" id="dishes">
                         <div class="col-4">
                             <label for="country">Starters</label><br>
@@ -197,14 +219,12 @@
                             <label for="dessert1"> Strawberry Gelato</label><br><br>
                         </div>
                     </div>
-                    <input type="submit" value="Submit">
+                    <div id="commentbox">
+                        <label id="comment" for="subject">Leave your comment</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <input type="submit" value="Submit">
+                      </div>
                   </form>
-               </div>
-              <div id="commentbox">
-                <label id="comment" for="subject">Leave your comment</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                <input type="submit" value="Submit">
-              </div>
             </form>
           </div>
     </footer>
